@@ -1,0 +1,86 @@
+@import "./variables.scss";
+
+/* Universal reset */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+/* Ensure that images do not exceed their container */
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Remove unwanted spacing around block elements */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+ul,
+ol,
+li,
+dl,
+dt,
+dd {
+	margin: 0;
+	padding: 0;
+}
+
+/* Reset list styles */
+ul,
+ol {
+	list-style: none;
+}
+
+/* Remove default styling for forms */
+input,
+select,
+textarea,
+button {
+	font-family: inherit;
+	font-size: inherit;
+	border: none;
+	background: transparent;
+	outline: none;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+a {
+	color: inherit;
+}
+
+/* Remove default spacing on body */
+body {
+	font-family: $fontFamilyPro;
+}
+
+/* Reset table layout */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Reset button styles */
+button {
+	cursor: pointer;
+}

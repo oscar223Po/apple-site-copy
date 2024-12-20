@@ -1,0 +1,59 @@
+@import "variables";
+
+/*
+::-webkit-scrollbar {
+	width: 2px;
+	border-radius: 1px;
+	background-color: #111;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: #fff;
+}
+*/
+
+::selection {
+	background-color: rgba(#a60101, 0.5);
+}
+summary {
+	list-style: none;
+	&::marker {
+		display: none;
+	}
+}
+@supports (-webkit-appearance: none) {
+	summary::-webkit-details-marker {
+		display: none;
+	}
+}
+
+html {
+	@media (max-width: $mobileSmall) {
+		&.locked {
+			overflow: hidden;
+		}
+	}
+}
+
+.wrapper {
+	display: flex;
+	overflow: hidden;
+	min-height: 100vh;
+	flex-direction: column;
+	@supports (overflow: clip) {
+		overflow: clip;
+	}
+	> main {
+		flex: 1 1 auto;
+	}
+	> * {
+		min-width: 0;
+	}
+}
+
+.page {
+	padding-top: 44px;
+	@media (max-width: $mobile) {
+		padding-top: 48px;
+	}
+}

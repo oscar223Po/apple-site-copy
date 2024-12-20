@@ -1,0 +1,67 @@
+@import "../../../../variables.scss";
+.spoller {
+	@media (max-width: $mobile) {
+		border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+	}
+}
+.spollerWhite {
+	@media (max-width: $mobile) {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+	}
+	.spollerTitle,
+	.spollerList {
+		color: rgba(255, 255, 255, 0.92);
+		svg {
+			path {
+				stroke: #fff;
+			}
+		}
+		a {
+			color: rgba(255, 255, 255, 0.8);
+		}
+	}
+}
+.spollerTitle {
+	font-size: 12px;
+	cursor: pointer;
+	font-weight: 600;
+	line-height: 133%;
+	letter-spacing: -0.01em;
+	color: rgba(0, 0, 0, 0.88);
+	&:not(:last-child) {
+		margin-bottom: 10px;
+	}
+	@media (max-width: $mobile) {
+		display: flex;
+		font-weight: 400;
+		padding: 11px 0px;
+		align-items: center;
+		justify-content: space-between;
+		&:not(:last-child) {
+			margin-bottom: 0;
+		}
+	}
+	&.active {
+		svg {
+			transform: rotate(-180deg);
+		}
+	}
+}
+.spollerList {
+	display: grid;
+	row-gap: 11px;
+	@media (max-width: $mobile) {
+		padding: 4px 0px 15px 15px;
+	}
+	a {
+		font-size: 12px;
+		line-height: 133%;
+		letter-spacing: -0.01em;
+		color: rgba(0, 0, 0, 0.72);
+		@media (any-hover: hover) {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
