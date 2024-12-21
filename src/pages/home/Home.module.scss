@@ -3,6 +3,7 @@
 .hero {
 	position: relative;
 	background-color: #000;
+	padding-bottom: clamp(42px, 5vw, 57px);
 	&::before {
 		top: 0;
 		left: 0;
@@ -20,10 +21,8 @@
 .heroBody {
 	margin: 0 auto;
 	max-width: 916px;
+	padding: 0px 15px;
 	text-align: center;
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-bottom: clamp(25px, 5vw, 57px);
 }
 .heroText {
 	color: #f5f5f7;
@@ -40,5 +39,109 @@
 		&:not(:last-child) {
 			margin-bottom: 25px;
 		}
+	}
+}
+// Intel
+.intel {
+	padding-top: clamp(42px, 5vw, 95px);
+	background: linear-gradient(180deg, #0c1247 0%, #30337d 18%, #505dad 33%, #7d8ed1 49%, #aebce6 73%, #fafafc 100%);
+}
+.intelBody {
+	margin: 0 auto;
+	max-width: 1016px;
+	padding: 0px 15px;
+}
+.intelHeading {
+	text-align: center;
+}
+.intelTitle {
+	color: #f5f5f7;
+	font-weight: 700;
+	line-height: 103%;
+	letter-spacing: -0.01em;
+	font-size: clamp(30px, 10vw, 62px);
+}
+.intelSubtitle {
+	margin-top: -40px;
+	margin-left: auto;
+	margin-right: auto;
+	@media (max-width: 599.98px) {
+		margin-top: -25px;
+	}
+	@media (max-width: $mobileSmall) {
+		margin-top: -15px;
+	}
+}
+.intelImage {
+	margin-bottom: clamp(28px, 5vw, 62px);
+	@media (max-width: $mobile) {
+		display: none;
+	}
+}
+.intelBottom {
+	display: grid;
+	gap: clamp(15px, 5vw, 30px);
+	padding-bottom: clamp(25px, 5vw, 95px);
+	@media (max-width: $mobile) {
+		margin-top: -15px;
+	}
+	@media (max-width: $mobileSmall) {
+		margin-top: -5px;
+	}
+}
+.intelText {
+	color: #1e1e1e;
+	margin: 0 auto;
+	max-width: 698px;
+	font-weight: 700;
+	line-height: 121%;
+	text-align: center;
+	letter-spacing: 0.01em;
+	font-family: $fontFamilyDisplay;
+	font-size: clamp(16px, 5vw, 23px);
+	@media (max-width: $mobile) {
+		color: rgba(255, 255, 255, 0.65);
+	}
+}
+.intelList {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	span {
+		color: #1d1d1f;
+		font-size: 17px;
+		font-weight: 500;
+		line-height: 147%;
+		text-align: center;
+		letter-spacing: -0.02em;
+		@media (max-width: $mobile) {
+			color: #f5f5f7;
+		}
+	}
+}
+.intelActionsBlack,
+.intelActionsWhite {
+	display: flex;
+	column-gap: 20px;
+	align-items: center;
+	justify-content: center;
+	@media (max-width: $mobileSmall) {
+		column-gap: 10px;
+	}
+}
+.intelActionsBlack {
+	@media (max-width: $mobile) {
+		display: none;
+	}
+}
+.intelActionsWhite {
+	@media (min-width: $mobile) {
+		display: none;
+	}
+}
+.intelImageMobile {
+	text-align: center;
+	@media (min-width: $mobile) {
+		display: none;
 	}
 }
