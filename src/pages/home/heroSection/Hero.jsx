@@ -1,19 +1,19 @@
 import React from 'react'
-import stHome from '../Home.module.scss';
-import images from "../../../assets/img/images"
-import ButtonBorderWhite from '../../../components/layout/buttons/ButtonBorderWhite';
+import stHome from './Hero.module.scss';
+import images from "../../../assets/img/homeImages"
+import Button from '../../../components/button/button';
 
 const HeroSection = () => {
 	return (
 		<div className={stHome.hero}>
-			<div className={stHome.heroBody}>
-				<div className={stHome.heroImage}>
+			<div className={stHome.body}>
+				<div className={stHome.image}>
 					<img src={images.hero.src} alt={images.hero.alt} />
 				</div>
-				<div className={stHome.heroText}>
+				<div className={stHome.text}>
 					<p>Introducing iPhone 16 Pro and iPhone 16, built for Apple Intelligence. All‑new Apple Watch Series 10 and AirPods 4. Apple Watch Ultra 2 and AirPods Max in fresh new colors. And AirPods Pro 2, with hearing health features coming this fall.</p>
 				</div>
-				<ButtonBorderWhite inner="Watch the event" />
+				<Button type="white" inner="Watch the event" />
 			</div>
 		</div>
 	)

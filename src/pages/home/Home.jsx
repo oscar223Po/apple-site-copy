@@ -1,12 +1,14 @@
 import React from 'react'
-import HeroSection from './sections/HeroSection';
-import IntelSection from './sections/IntelSection';
+import HeroSection from './heroSection/Hero';
+import IntelSection from './IntelSection/Intel';
+import WatchSection from './WatchSection/Watch';
 
 const Home = () => {
 	return (
 		<>
 			<HeroSection />
 			<IntelSection />
+			<WatchSection />
 		</>
 	)
 }

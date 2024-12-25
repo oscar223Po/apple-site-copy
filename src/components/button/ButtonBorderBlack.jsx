@@ -1,9 +1,9 @@
 import React from 'react'
-import './Buttons.scss';
+import './Button.scss';
 
 const ButtonBorderBlack = ({ inner }) => {
 	return (
-		<a href="" class="button-border-black">{inner}</a>
+		<a href="" className="button-border-black">{inner}</a>
 	)
 }
 

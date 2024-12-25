@@ -1,10 +1,10 @@
 import React from 'react'
-import './Buttons.scss';
+import './Button.scss';
 
 const ButtonBorderWhite = ({ inner }) => {
 	return (
 		<>
-			<a href="" class="button-border-white">{inner}</a>
+			<a href="" className="button-border-white">{inner}</a>
 		</>
 	)
 }
