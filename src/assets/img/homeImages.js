@@ -6,6 +6,9 @@ import intelSub from './home/intel-subtitle.png';
 import watchTitle from './home/watch-head.png';
 import watch from './home/watch-pc.png';
 import watchMob from './home/watch-mb.png';
+import ultra from './home/ultra.png';
+import ultraTitle from './home/ultra-head.png';
+import podsBack from './home/pods-bg.png';
 
 const homeImages = {
 	// Hero Images
@@ -38,6 +41,20 @@ const homeImages = {
 	watchTitle: {
 		src: watchTitle,
 		alt: "Watch Title"
+	},
+	// Ultra Images
+	ultra: {
+		src: ultra,
+		alt: "Ultra Image"
+	},
+	ultraTitle: {
+		src: ultraTitle,
+		alt: "Ultra Title"
+	},
+	// Pods Images
+	podsBack: {
+		src: podsBack,
+		alt: "AirPods"
 	}
 };
 

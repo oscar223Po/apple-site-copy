@@ -1,7 +1,9 @@
 import React from 'react'
 import HeroSection from './heroSection/Hero';
-import IntelSection from './IntelSection/Intel';
-import WatchSection from './WatchSection/Watch';
+import IntelSection from './intelSection/Intel';
+import WatchSection from './watchSection/Watch';
+import UltraSection from './ultraSection/Ultra';
+import PodsSection from './podsSection/Pods';
 
 const Home = () => {
 	return (
@@ -9,6 +11,8 @@ const Home = () => {
 			<HeroSection />
 			<IntelSection />
 			<WatchSection />
+			<UltraSection />
+			<PodsSection />
 		</>
 	)
 }
