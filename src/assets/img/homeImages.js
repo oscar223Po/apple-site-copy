@@ -9,6 +9,8 @@ import watchMob from './home/watch-mb.png';
 import ultra from './home/ultra.png';
 import ultraTitle from './home/ultra-head.png';
 import podsBack from './home/pods-bg.png';
+import podsPro from './home/pods-pro.png';
+import podsMax from './home/pods-max.png';
 
 const homeImages = {
 	// Hero Images
@@ -55,6 +57,16 @@ const homeImages = {
 	podsBack: {
 		src: podsBack,
 		alt: "AirPods"
+	},
+	// PodsPro Images
+	podsPro: {
+		src: podsPro,
+		alt: "AirPods Pro"
+	},
+	// PodsMax Images
+	podsMax: {
+		src: podsMax,
+		alt: "AirPods Max"
 	}
 };
 
