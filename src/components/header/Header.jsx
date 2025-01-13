@@ -4,7 +4,7 @@ import stHeader from './Header.module.scss';
 
 const Header = ({ path }) => {
 	const location = useLocation();
-	const headerClass = ['/', '/iphone'].includes(location.pathname) ? stHeader.header : stHeader.headerWhite;
+	const headerClass = ['/', '/ipad'].includes(location.pathname) ? stHeader.header : stHeader.headerWhite;
 	// Work with menu list
 	const [isActive, setIsActive] = useState(false);
 	const handleClick = () => {

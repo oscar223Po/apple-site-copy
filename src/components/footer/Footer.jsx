@@ -5,7 +5,7 @@ import { useLocation } from 'react-router-dom';
 
 const Footer = ({ path }) => {
 	const location = useLocation();
-	const footerClass = !['/iphone'].includes(location.pathname) ? stFooter.footer : stFooter.footerDark;
+	const footerClass = !['/ipad'].includes(location.pathname) ? stFooter.footer : stFooter.footerDark;
 	return (
 		<footer className={`${stFooter.footer} ${footerClass}`}>
 			<div className={stFooter.container}>

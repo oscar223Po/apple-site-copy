@@ -1,0 +1,85 @@
+@import "../../variables";
+.nav {
+	position: relative;
+	background-color: #fafafc;
+	&::before {
+		top: 0;
+		left: 0;
+		width: 100%;
+		content: "";
+		height: 100%;
+		position: absolute;
+		background-color: #fafafc;
+		transform: translate(0px, -100%);
+	}
+}
+.container {
+	margin: 0 auto;
+	max-width: 1168px;
+	position: relative;
+	padding: 16px 34px 0px 34px;
+}
+.slide {
+	display: flex;
+	align-items: center;
+	padding-bottom: 19px;
+	justify-content: center;
+}
+.link {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.preview {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&:not(:last-child) {
+		margin-bottom: 4px;
+	}
+}
+.label {
+	display: flex;
+	font-size: 12px;
+	line-height: 133%;
+	text-align: center;
+	white-space: nowrap;
+	align-items: center;
+	flex-direction: column;
+	letter-spacing: -0.01em;
+	color: rgba(0, 0, 0, 0.8);
+	span {
+		display: flex;
+		color: #b64400;
+		font-weight: 500;
+	}
+}
+// Controlls Styles
+.controls {
+	left: 0;
+	top: 50%;
+	width: 100%;
+	height: 100px;
+	display: flex;
+	position: absolute;
+	justify-content: space-between;
+	transform: translate(0px, -50%);
+}
+.buttonPrev {
+	width: 34px;
+	transition: opacity 0.3s;
+	border-right: 1px solid #d2d2d7;
+	&:global(.swiper-button-disabled) {
+		opacity: 0;
+		cursor: not-allowed;
+	}
+}
+.buttonNext {
+	width: 34px;
+	transition: opacity 0.3s;
+	border-left: 1px solid #d2d2d7;
+	&:global(.swiper-button-disabled) {
+		opacity: 0;
+		cursor: not-allowed;
+	}
+}

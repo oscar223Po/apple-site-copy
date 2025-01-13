@@ -29,7 +29,7 @@ const Spoller = ({ title, links, path }) => {
 	const toggleOpen = () => setIsOpen(!isOpen);
 
 	const location = useLocation();
-	const spollerClass = !['/iphone'].includes(location.pathname) ? stSpoller.spoller : stSpoller.spollerWhite;
+	const spollerClass = !['/ipad'].includes(location.pathname) ? stSpoller.spoller : stSpoller.spollerWhite;
 
 	return (
 		<div className={`${stSpoller.spoller} ${spollerClass}`}>
