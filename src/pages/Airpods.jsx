@@ -2,7 +2,7 @@ import React from 'react'
 
 const Airpods = () => {
 	return (
-		<div>Airpods</div>
+		<div>Airpods Pro</div>
 	)
 }
 
