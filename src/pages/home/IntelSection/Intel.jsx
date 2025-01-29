@@ -3,7 +3,7 @@ import stHome from './Intel.module.scss';
 import img from '../../../assets/img/homeImages';
 import Button from '../../../components/button/button';
 
-const IntelSection = () => {
+const IntelSection = ({ type = "secondary" }) => {
 	return (
 		<div className={stHome.intel}>
 			<div className={stHome.body}>
@@ -17,7 +17,7 @@ const IntelSection = () => {
 					<img src={img.intel.src} alt={img.intel.alt} />
 				</div>
 				<div className={stHome.bottom}>
-					<div className={stHome.text}>
+					<div className={`${stHome.text} ${[`text--${type}`]}`}>
 						<p>Built for Apple Intelligence to help you write, express yourself, and get things done effortlessly. Camera Control, an easier way to quickly access camera tools. And the custom-built A18 chip.</p>
 					</div>
 					<div className={stHome.list}>

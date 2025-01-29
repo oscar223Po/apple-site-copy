@@ -34,18 +34,8 @@
 }
 .text {
 	color: #86868b;
-	font-weight: 700;
-	line-height: 121%;
 	text-align: center;
-	letter-spacing: 0.01em;
-	font-family: $fontFamilyDisplay;
 	color: rgba(255, 255, 255, 0.65);
-	font-size: clamp(16px, 3vw, 22px);
-	span {
-		font-size: 13px;
-		text-decoration: underline;
-		text-decoration-skip-ink: none;
-	}
 	&:not(:last-child) {
 		margin-bottom: 28px;
 	}

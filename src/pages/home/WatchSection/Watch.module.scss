@@ -38,17 +38,7 @@
 }
 .text {
 	color: #6e6e73;
-	font-weight: 700;
-	line-height: 121%;
 	text-align: center;
-	letter-spacing: 0.01em;
-	font-family: $fontFamilyDisplay;
-	font-size: clamp(16px, 3vw, 23px);
-	span {
-		font-size: 13px;
-		text-decoration: underline;
-		text-decoration-skip-ink: none;
-	}
 	&:not(:last-child) {
 		margin-bottom: 28px;
 	}

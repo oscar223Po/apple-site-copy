@@ -3,13 +3,13 @@ import stHome from './Max.module.scss';
 import img from '../../../assets/img/homeImages';
 import Button from '../../../components/button/button';
 
-const MaxSection = () => {
+const MaxSection = ({ type = "secondary" }) => {
 	return (
 		<div className={stHome.max}>
 			<div className={stHome.body}>
 				<div className={stHome.head}>
 					<h3 className={stHome.title}>AirPods Max</h3>
-					<div className={stHome.text}>
+					<div className={`${stHome.text} ${[`text--${type}`]}`}>
 						<p>The ultimate over-ear personal listening experience. Now in fresh new colors with fast and easy USB-C charging.</p>
 					</div>
 				</div>

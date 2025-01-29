@@ -5,6 +5,24 @@ $mobileSmall: 479.98px;
 $fontFamilyPro: "SFProText";
 $fontFamilyDisplay: "SFProDisplay";
 
+.text {
+	font-weight: 700;
+	line-height: 130%;
+	&--primary {
+		font-size: clamp(18px, 5vw, 30px);
+	}
+	&--secondary {
+		letter-spacing: 0.01em;
+		font-family: $fontFamilyDisplay;
+		font-size: clamp(16px, 3vw, 23px);
+		span {
+			font-size: 13px;
+			text-decoration: underline;
+			text-decoration-skip-ink: none;
+		}
+	}
+}
+
 :root {
 	--apple-com-nero: #fff;
 	--apple-com-white-lilac: #fbfbfd;

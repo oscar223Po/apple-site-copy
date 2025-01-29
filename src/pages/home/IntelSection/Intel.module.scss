@@ -50,12 +50,7 @@
 .text {
 	color: #1e1e1e;
 	margin: 0 auto;
-	font-weight: 700;
-	line-height: 121%;
 	text-align: center;
-	letter-spacing: 0.01em;
-	font-family: $fontFamilyDisplay;
-	font-size: clamp(16px, 5vw, 23px);
 	max-width: clamp(300px, 70vw, 698px);
 	@media (max-width: $mobile) {
 		color: rgba(255, 255, 255, 0.65);
