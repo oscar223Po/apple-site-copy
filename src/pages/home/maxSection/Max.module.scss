@@ -15,12 +15,7 @@
 	}
 	@media (max-width: $mobile) {
 		&:not(:last-child) {
-			margin-bottom: 25px;
-		}
-	}
-	@media (max-width: $mobileSmall) {
-		&:not(:last-child) {
-			margin-bottom: 20px;
+			margin-bottom: 0px;
 		}
 	}
 }
@@ -56,26 +51,8 @@
 .image {
 	padding: 0px 90px;
 	text-align: center;
-	&:not(:last-child) {
-		margin-bottom: 32px;
-	}
 	@media (max-width: $mobile) {
 		display: none;
-	}
-}
-.label {
-	font-size: 17px;
-	font-weight: 500;
-	line-height: 147%;
-	text-align: center;
-	letter-spacing: -0.02em;
-	&:not(:last-child) {
-		margin-bottom: 34px;
-	}
-	@media (max-width: $mobile) {
-		&:not(:last-child) {
-			margin-bottom: 25px;
-		}
 	}
 }
 .actions {

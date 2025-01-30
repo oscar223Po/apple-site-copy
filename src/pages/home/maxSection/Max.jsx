@@ -2,6 +2,7 @@ import React from 'react'
 import stHome from './Max.module.scss';
 import img from '../../../assets/img/homeImages';
 import Button from '../../../components/button/button';
+import Label from '../../../components/label/Label';
 
 const MaxSection = ({ type = "secondary" }) => {
 	return (
@@ -16,7 +17,7 @@ const MaxSection = ({ type = "secondary" }) => {
 				<div className={stHome.image}>
 					<img src={img.podsMax.src} alt={img.podsMax.alt} />
 				</div>
-				<div className={stHome.label}>Available starting 9.20</div>
+				<Label inner="Available starting 9.20" />
 				<div className={stHome.actions}>
 					<Button type="black" inner="Learn more" />
 					<Button type="black" inner="Pre-order" />

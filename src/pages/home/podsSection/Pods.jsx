@@ -1,6 +1,7 @@
 import React from 'react'
 import stHome from './Pods.module.scss';
 import Button from '../../../components/button/button';
+import Label from '../../../components/label/Label';
 
 const PodsSection = ({ type = "secondary" }) => {
 	return (
@@ -10,7 +11,7 @@ const PodsSection = ({ type = "secondary" }) => {
 				<div className={`${stHome.text} ${[`text--${type}`]}`}>
 					<p>Updated fit for all-day comfort. A totally transformed audio experience. And available with Active Noise Cancellation — a first for this open-ear design.</p>
 				</div>
-				<div className={stHome.subtitle}>Available starting 9.20</div>
+				<Label className="label-white" inner="Available starting 9.20" />
 				<div className={stHome.actions}>
 					<Button type="white" inner="Learn more" />
 					<Button type="white" inner="Pre-order" />

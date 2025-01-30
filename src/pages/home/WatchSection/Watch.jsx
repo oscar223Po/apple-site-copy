@@ -2,6 +2,7 @@ import React from 'react'
 import stHome from './Watch.module.scss';
 import img from '../../../assets/img/homeImages';
 import Button from '../../../components/button/button';
+import Label from '../../../components/label/Label';
 
 const WatchSection = ({ type = "secondary" }) => {
 	return (
@@ -13,7 +14,7 @@ const WatchSection = ({ type = "secondary" }) => {
 				<div className={`${stHome.text} ${[`text--${type}`]}`}>
 					<p>Our thinnest watch with our biggest display.<span>1</span> Invaluable health insights, including sleep apnea notifications. <span>2</span> Tracking for your activity and workouts — with depth and water temperature. All in our fastest-charging watch ever. <span>3</span></p>
 				</div>
-				<div className={stHome.subtitle}>Available starting 9.20</div>
+				<Label inner="Available starting 9.20" />
 				<div className={stHome.actions}>
 					<Button type="black" inner="Learn more" />
 					<Button type="black" inner="Pre-order" />

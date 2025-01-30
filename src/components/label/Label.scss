@@ -1,0 +1,26 @@
+@import "../../variables";
+.labels {
+	row-gap: 3px;
+	display: grid;
+	padding-top: 34px;
+	text-align: center;
+	padding-bottom: 34px;
+	@media (max-width: $mobileSmall) {
+		padding-top: 24px;
+		padding-bottom: 24px;
+	}
+}
+.label {
+	font-size: 17px;
+	font-weight: 500;
+	line-height: 147%;
+	letter-spacing: -0.02em;
+}
+.label-white {
+	color: #f5f5f7;
+}
+.label-white-mobile {
+	@media (max-width: $mobile) {
+		color: #f5f5f7;
+	}
+}

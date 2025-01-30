@@ -39,28 +39,6 @@
 .text {
 	color: #6e6e73;
 	text-align: center;
-	&:not(:last-child) {
-		margin-bottom: 28px;
-	}
-	@media (max-width: $mobileSmall) {
-		&:not(:last-child) {
-			margin-bottom: 20px;
-		}
-	}
-}
-.subtitle {
-	font-size: 17px;
-	font-weight: 500;
-	line-height: 147%;
-	letter-spacing: -0.02em;
-	&:not(:last-child) {
-		margin-bottom: 34px;
-	}
-	@media (max-width: $mobileSmall) {
-		&:not(:last-child) {
-			margin-bottom: 24px;
-		}
-	}
 }
 .actions {
 	display: flex;

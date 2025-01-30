@@ -2,6 +2,7 @@ import React from 'react'
 import stHome from './Intel.module.scss';
 import img from '../../../assets/img/homeImages';
 import Button from '../../../components/button/button';
+import Label from '../../../components/label/Label';
 
 const IntelSection = ({ type = "secondary" }) => {
 	return (
@@ -20,11 +21,7 @@ const IntelSection = ({ type = "secondary" }) => {
 					<div className={`${stHome.text} ${[`text--${type}`]}`}>
 						<p>Built for Apple Intelligence to help you write, express yourself, and get things done effortlessly. Camera Control, an easier way to quickly access camera tools. And the custom-built A18 chip.</p>
 					</div>
-					<div className={stHome.list}>
-						<span>Pre-order starting 9.13</span>
-						<span>Available starting 9.20</span>
-						<span>Apple Intelligence coming this fall</span>
-					</div>
+					<Label className="label-white-mobile" inner={["Pre-order starting 9.13", "Available starting 9.20", "Apple Intelligence coming this fall"]} />
 					<div className={stHome.actions}>
 						<div className={stHome.actionsBlack}>
 							<Button type="black" inner="Learn more" />
