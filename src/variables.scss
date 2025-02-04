@@ -5,6 +5,12 @@ $mobileSmall: 479.98px;
 $fontFamilyPro: "SFProText";
 $fontFamilyDisplay: "SFProDisplay";
 
+.container {
+	margin: 0 auto;
+	max-width: 1290px;
+	padding: 0px 15px;
+}
+
 .text {
 	font-weight: 700;
 	line-height: 130%;
@@ -20,6 +26,16 @@ $fontFamilyDisplay: "SFProDisplay";
 			text-decoration: underline;
 			text-decoration-skip-ink: none;
 		}
+	}
+}
+
+.title {
+	&--primary {
+		font-weight: 700;
+		line-height: 109%;
+		letter-spacing: -0.02em;
+		font-family: $fontFamilyDisplay;
+		font-size: clamp(42px, 10vw, 77px);
 	}
 }
 

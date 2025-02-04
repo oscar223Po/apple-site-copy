@@ -19,8 +19,10 @@ body {
 
 /* Ensure that images do not exceed their container */
 img {
-	max-width: 100%;
 	height: auto;
+	max-width: 100%;
+	object-fit: cover;
+	object-position: center;
 }
 
 /* Remove unwanted spacing around block elements */

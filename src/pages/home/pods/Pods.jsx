@@ -1,18 +1,18 @@
 import React from 'react'
-import stHome from './Pods.module.scss';
+import style from './Pods.module.scss';
 import Button from '../../../components/button/button';
 import Label from '../../../components/label/Label';
 
-const PodsSection = ({ type = "secondary" }) => {
+const PodsSection = ({ text = "secondary" }) => {
 	return (
-		<div className={stHome.pods}>
-			<div className={stHome.body}>
-				<h3 className={stHome.title}>AirPods 4</h3>
-				<div className={`${stHome.text} ${[`text--${type}`]}`}>
+		<div className={style.pods}>
+			<div className={style.body}>
+				<h3 className={style.title}>AirPods 4</h3>
+				<div className={`${style.text} text--${text}`}>
 					<p>Updated fit for all-day comfort. A totally transformed audio experience. And available with Active Noise Cancellation — a first for this open-ear design.</p>
 				</div>
 				<Label className="label-white" inner="Available starting 9.20" />
-				<div className={stHome.actions}>
+				<div className={style.actions}>
 					<Button type="white" inner="Learn more" />
 					<Button type="white" inner="Pre-order" />
 				</div>

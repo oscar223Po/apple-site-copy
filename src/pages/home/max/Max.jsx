@@ -1,28 +1,28 @@
 import React from 'react'
-import stHome from './Max.module.scss';
+import style from './Max.module.scss';
 import img from '../../../assets/img/homeImages';
 import Button from '../../../components/button/button';
 import Label from '../../../components/label/Label';
 
-const MaxSection = ({ type = "secondary" }) => {
+const MaxSection = ({ text = "secondary" }) => {
 	return (
-		<div className={stHome.max}>
-			<div className={stHome.body}>
-				<div className={stHome.head}>
-					<h3 className={stHome.title}>AirPods Max</h3>
-					<div className={`${stHome.text} ${[`text--${type}`]}`}>
+		<div className={style.max}>
+			<div className={style.body}>
+				<div className={style.head}>
+					<h3 className={style.title}>AirPods Max</h3>
+					<div className={`${style.text} text--${text}`}>
 						<p>The ultimate over-ear personal listening experience. Now in fresh new colors with fast and easy USB-C charging.</p>
 					</div>
 				</div>
-				<div className={stHome.image}>
+				<div className={style.image}>
 					<img src={img.podsMax.src} alt={img.podsMax.alt} />
 				</div>
 				<Label inner="Available starting 9.20" />
-				<div className={stHome.actions}>
+				<div className={style.actions}>
 					<Button type="black" inner="Learn more" />
 					<Button type="black" inner="Pre-order" />
 				</div>
-				<div className={stHome.imageMobile}>
+				<div className={style.imageMobile}>
 					<img src={img.podsMax.src} alt={img.podsMax.alt} />
 				</div>
 			</div>

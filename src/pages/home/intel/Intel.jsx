@@ -1,39 +1,39 @@
 import React from 'react'
-import stHome from './Intel.module.scss';
+import style from './Intel.module.scss';
 import img from '../../../assets/img/homeImages';
 import Button from '../../../components/button/button';
 import Label from '../../../components/label/Label';
 
-const IntelSection = ({ type = "secondary" }) => {
+const IntelSection = ({ text = "secondary" }) => {
 	return (
-		<div className={stHome.intel}>
-			<div className={stHome.body}>
-				<div className={stHome.head}>
-					<h5 className={stHome.title}>iPhone 16</h5>
-					<div className={stHome.subtitle}>
+		<div className={style.intel}>
+			<div className={style.body}>
+				<div className={style.head}>
+					<h5 className={style.title}>iPhone 16</h5>
+					<div className={style.subtitle}>
 						<img src={img.intelSub.src} alt={img.intelSub.alt} />
 					</div>
 				</div>
-				<div className={stHome.image}>
+				<div className={style.image}>
 					<img src={img.intel.src} alt={img.intel.alt} />
 				</div>
-				<div className={stHome.bottom}>
-					<div className={`${stHome.text} ${[`text--${type}`]}`}>
+				<div className={style.bottom}>
+					<div className={`${style.text} text--${text}`}>
 						<p>Built for Apple Intelligence to help you write, express yourself, and get things done effortlessly. Camera Control, an easier way to quickly access camera tools. And the custom-built A18 chip.</p>
 					</div>
 					<Label className="label-white-mobile" inner={["Pre-order starting 9.13", "Available starting 9.20", "Apple Intelligence coming this fall"]} />
-					<div className={stHome.actions}>
-						<div className={stHome.actionsBlack}>
+					<div className={style.actions}>
+						<div className={style.actionsBlack}>
 							<Button type="black" inner="Learn more" />
 							<Button type="black" inner="View pricing" />
 						</div>
-						<div className={stHome.actionsWhite}>
+						<div className={style.actionsWhite}>
 							<Button type="white" inner="Learn more" />
 							<Button type="white" inner="View pricing" />
 						</div>
 					</div>
 				</div>
-				<div className={stHome.imageMobile}>
+				<div className={style.imageMobile}>
 					<img src={img.intelMob.src} alt={img.intelMob.alt} />
 				</div>
 			</div>

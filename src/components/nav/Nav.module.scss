@@ -1,5 +1,6 @@
 @import "../../variables";
 .nav {
+	padding-top: 44px;
 	position: relative;
 	background-color: #fafafc;
 	&::before {
@@ -11,6 +12,9 @@
 		position: absolute;
 		background-color: #fafafc;
 		transform: translate(0px, -100%);
+	}
+	@media (max-width: $mobile) {
+		padding-top: 48px;
 	}
 }
 .container {

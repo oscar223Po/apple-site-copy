@@ -1,22 +1,22 @@
 import React from 'react'
-import HeroSection from './heroSection/Hero';
-import IntelSection from './intelSection/Intel';
-import WatchSection from './watchSection/Watch';
-import UltraSection from './ultraSection/Ultra';
-import PodsSection from './podsSection/Pods';
-import ProSection from './proSection/Pro';
-import MaxSection from './maxSection/Max';
+import Hero from './hero/Hero';
+import Intel from './intel/Intel';
+import Watch from './watch/Watch';
+import Ultra from './ultra/Ultra';
+import Pods from './pods/Pods';
+import Pro from './pro/Pro';
+import Max from './max/Max';
 
 const Home = () => {
 	return (
 		<>
-			<HeroSection />
-			<IntelSection />
-			<WatchSection />
-			<UltraSection />
-			<PodsSection />
-			<ProSection />
-			<MaxSection />
+			<Hero />
+			<Intel />
+			<Watch />
+			<Ultra />
+			<Pods />
+			<Pro />
+			<Max />
 		</>
 	)
 }

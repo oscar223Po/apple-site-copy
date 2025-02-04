@@ -1,6 +1,6 @@
 import React from 'react'
 import "./App.scss"
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Route, Routes, useLocation } from 'react-router-dom'
 import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
 import Home from './pages/home/Home'
@@ -15,31 +15,39 @@ import Tv from './pages/Tv'
 import Entertainment from './pages/Entertainment'
 import Accessories from './pages/Accessories'
 import Support from './pages/Support'
+import Nav from './components/nav/Nav'
+import Preorder from './components/preorder/Preorder'
 
 const App = () => {
+	const location = useLocation();
+	const showNav = location.pathname === '/iphone';
 	return (
-		<BrowserRouter>
-			<div className="wrapper">
-				<Header />
-				<main className="page">
-					<Routes>
-						<Route path='/' element={<Home />} />
-						<Route path='/store' element={<Store />} />
-						<Route path='/mac' element={<Mac />} />
-						<Route path='/ipad' element={<Ipad />} />
-						<Route path='/iphone' element={<Iphone />} />
-						<Route path='/watch' element={<Watch />} />
-						<Route path='/vision' element={<Vision />} />
-						<Route path='/airpods' element={<Airpods />} />
-						<Route path='/tv' element={<Tv />} />
-						<Route path='/entertainment' element={<Entertainment />} />
-						<Route path='/accessories' element={<Accessories />} />
-						<Route path='/support' element={<Support />} />
-					</Routes>
-				</main>
-				<Footer />
-			</div>
-		</BrowserRouter>
+		<div className="wrapper">
+			<Header />
+			{showNav && (
+				<>
+					<Nav />
+					<Preorder />
+				</>
+			)}
+			<main className="page">
+				<Routes>
+					<Route path='/' element={<Home />} />
+					<Route path='/store' element={<Store />} />
+					<Route path='/mac' element={<Mac />} />
+					<Route path='/ipad' element={<Ipad />} />
+					<Route path='/iphone' element={<Iphone />} />
+					<Route path='/watch' element={<Watch />} />
+					<Route path='/vision' element={<Vision />} />
+					<Route path='/airpods' element={<Airpods />} />
+					<Route path='/tv' element={<Tv />} />
+					<Route path='/entertainment' element={<Entertainment />} />
+					<Route path='/accessories' element={<Accessories />} />
+					<Route path='/support' element={<Support />} />
+				</Routes>
+			</main>
+			<Footer />
+		</div>
 	)
 }
 

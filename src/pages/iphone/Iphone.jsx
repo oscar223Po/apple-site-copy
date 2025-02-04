@@ -1,10 +1,10 @@
 import React from 'react'
-import Nav from '../../components/nav/Nav'
+import Hero from './hero/Hero'
 
 const Iphone = () => {
 	return (
 		<>
-			<Nav />
+			<Hero />
 		</>
 	)
 }
