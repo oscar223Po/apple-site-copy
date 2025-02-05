@@ -1,26 +1,17 @@
+@import "common";
 @import "variables";
-
-/*
-::-webkit-scrollbar {
-	width: 2px;
-	border-radius: 1px;
-	background-color: #111;
-}
-::-webkit-scrollbar-thumb {
-	border-radius: 10px;
-	background-color: #fff;
-}
-*/
 
 ::selection {
 	background-color: rgba(#a60101, 0.5);
 }
+
 summary {
 	list-style: none;
 	&::marker {
 		display: none;
 	}
 }
+
 @supports (-webkit-appearance: none) {
 	summary::-webkit-details-marker {
 		display: none;

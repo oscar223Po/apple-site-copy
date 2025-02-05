@@ -5,7 +5,7 @@ import Button from '../../../components/button/button';
 
 const HeroSection = ({ text = "primary" }) => {
 	return (
-		<div className={style.hero}>
+		<div className={style.main}>
 			<div className={style.body}>
 				<div className={style.image}>
 					<img src={images.hero.src} alt={images.hero.alt} />

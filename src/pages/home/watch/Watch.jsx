@@ -6,7 +6,7 @@ import Label from '../../../components/label/Label';
 
 const WatchSection = ({ text = "secondary" }) => {
 	return (
-		<div className={style.watch}>
+		<div className={style.main}>
 			<div className={style.body}>
 				<div className={style.title}>
 					<img src={img.watchTitle.src} alt={img.watchTitle.alt} />

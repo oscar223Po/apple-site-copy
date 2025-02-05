@@ -5,7 +5,7 @@ import Button from '../../../components/button/button';
 
 const ProSection = ({ text = "secondary" }) => {
 	return (
-		<div className={style.pro}>
+		<div className={style.main}>
 			<div className={style.body}>
 				<h3 className={style.title}>AirPods Pro 2</h3>
 				<div className={`${style.text} text--${text}`}>

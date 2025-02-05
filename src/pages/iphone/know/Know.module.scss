@@ -1,0 +1,4 @@
+@import "../../../variables.scss";
+.main {
+	padding-top: clamp(35px, 10vw, 70px);
+}

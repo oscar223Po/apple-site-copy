@@ -59,7 +59,7 @@ const Spoller = ({ title, links, path }) => {
 				<ul className={stSpoller.spollerList}>
 					{links.map((link, index) => (
 						<li key={index}>
-							<a href="#">{link}</a>
+							<a target="_blank" href="https://google.com" rel="noopener noreferrer">{link}</a>
 						</li>
 					))}
 				</ul>
@@ -70,7 +70,7 @@ const Spoller = ({ title, links, path }) => {
 				<ul className={stSpoller.spollerList}>
 					{links.map((link, index) => (
 						<li key={index}>
-							<a href="#">{link}</a>
+							<a target="_blank" href="https://google.com" rel="noopener noreferrer">{link}</a>
 						</li>
 					))}
 				</ul>

@@ -6,7 +6,7 @@ import Label from '../../../components/label/Label';
 
 const IntelSection = ({ text = "secondary" }) => {
 	return (
-		<div className={style.intel}>
+		<div className={style.main}>
 			<div className={style.body}>
 				<div className={style.head}>
 					<h5 className={style.title}>iPhone 16</h5>

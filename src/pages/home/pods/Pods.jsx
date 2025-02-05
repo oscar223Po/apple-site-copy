@@ -5,7 +5,7 @@ import Label from '../../../components/label/Label';
 
 const PodsSection = ({ text = "secondary" }) => {
 	return (
-		<div className={style.pods}>
+		<div className={style.main}>
 			<div className={style.body}>
 				<h3 className={style.title}>AirPods 4</h3>
 				<div className={`${style.text} text--${text}`}>

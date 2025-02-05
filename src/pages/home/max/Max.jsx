@@ -6,7 +6,7 @@ import Label from '../../../components/label/Label';
 
 const MaxSection = ({ text = "secondary" }) => {
 	return (
-		<div className={style.max}>
+		<div className={style.main}>
 			<div className={style.body}>
 				<div className={style.head}>
 					<h3 className={style.title}>AirPods Max</h3>

@@ -1,6 +1,6 @@
 @import "../../../variables";
 // Watch Section
-.watch {
+.main {
 	padding-top: clamp(38px, 6vw, 80px);
 	@media (max-width: $mobile) {
 		padding-bottom: 35px;

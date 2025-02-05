@@ -2,14 +2,14 @@ import React from 'react'
 import style from './Hero.module.scss';
 import images from '../../../assets/img/iphoneImages';
 
-const Hero = ({ title = "primary" }) => {
+const Hero = () => {
 	return (
 		<div className={style.hero}>
 			<div className="container">
 				<div className={style.body}>
-					<div className={style.head}>
-						<div className={`${style.title} title--${title}`}>iPhone</div>
-						<div className={style.subtitle}>Designed to be loved.</div>
+					<div className="heading">
+						<h3 className="heading__title title title--big">iPhone</h3>
+						<h5 className="heading__subtitle">Designed to be loved.</h5>
 					</div>
 					{images.hero && (
 						<div className={style.image}>

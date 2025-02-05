@@ -6,7 +6,7 @@ import Label from '../../../components/label/Label';
 
 const UltraSection = ({ text = "secondary" }) => {
 	return (
-		<div className={style.ultra}>
+		<div className={style.main}>
 			<div className={style.body}>
 				<div className={style.title}>
 					<img src={img.ultraTitle.src} alt={img.ultraTitle.alt} />
