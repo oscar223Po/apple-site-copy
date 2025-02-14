@@ -8,37 +8,37 @@ import "swiper/css/navigation";
 
 const slidesData = [
 	{
-		img: images.slideOne,
+		img: images.slide1,
 		title: "Apple Intelligence",
 		subtitle: "AI‑opening possibilities.",
 		customStyle: {}
 	},
 	{
-		img: images.slideTwo,
+		img: images.slide2,
 		title: "Cutting-Edge Cameras",
 		subtitle: "Picture your best photos and videos.",
 		customStyle: {}
 	},
 	{
-		img: images.slideThree,
+		img: images.slide3,
 		title: "Chip and Battery Life",
 		subtitle: "Fast that lasts.",
 		customStyle: {}
 	},
 	{
-		img: images.slideFour,
+		img: images.slide4,
 		title: "Innovation",
 		subtitle: "Beautiful and durable, by design.",
 		customStyle: { color: '#1d1d1f' }
 	},
 	{
-		img: images.slideOne,
+		img: images.slide1,
 		title: "Apple Intelligence",
 		subtitle: "AI‑opening possibilities.",
 		customStyle: {}
 	},
 	{
-		img: images.slideTwo,
+		img: images.slide2,
 		title: "Cutting-Edge Cameras",
 		subtitle: "Picture your best photos and videos.",
 		customStyle: {}
@@ -101,12 +101,12 @@ export default function Slider() {
 			<div className="arrows">
 				<button ref={prevRef} className="arrows__arrow arrows__arrow--prev">
 					<svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M9.55877 7.916C10.1448 8.5 10.1468 9.446 9.56477 10.034L2.60777 17.056C2.31477 17.352 1.92877 17.5 1.54277 17.5C1.16077 17.5 0.778771 17.355 0.486771 17.065C-0.102229 16.482 -0.105229 15.533 0.477771 14.944L6.38187 8.984L0.440871 3.062C-0.145129 2.478 -0.147128 1.5279 0.437871 0.941001C1.02187 0.354001 1.97387 0.353001 2.55887 0.938001L9.55877 7.916Z" fill="black" fill-opacity="0.56" />
+						<path d="M9.55877 7.916C10.1448 8.5 10.1468 9.446 9.56477 10.034L2.60777 17.056C2.31477 17.352 1.92877 17.5 1.54277 17.5C1.16077 17.5 0.778771 17.355 0.486771 17.065C-0.102229 16.482 -0.105229 15.533 0.477771 14.944L6.38187 8.984L0.440871 3.062C-0.145129 2.478 -0.147128 1.5279 0.437871 0.941001C1.02187 0.354001 1.97387 0.353001 2.55887 0.938001L9.55877 7.916Z" fill="black" fillOpacity="0.56" />
 					</svg>
 				</button>
 				<button ref={nextRef} className="arrows__arrow arrows__arrow--next">
 					<svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M9.55877 7.916C10.1448 8.5 10.1468 9.446 9.56477 10.034L2.60777 17.056C2.31477 17.352 1.92877 17.5 1.54277 17.5C1.16077 17.5 0.778771 17.355 0.486771 17.065C-0.102229 16.482 -0.105229 15.533 0.477771 14.944L6.38187 8.984L0.440871 3.062C-0.145129 2.478 -0.147128 1.5279 0.437871 0.941001C1.02187 0.354001 1.97387 0.353001 2.55887 0.938001L9.55877 7.916Z" fill="black" fill-opacity="0.56" />
+						<path d="M9.55877 7.916C10.1448 8.5 10.1468 9.446 9.56477 10.034L2.60777 17.056C2.31477 17.352 1.92877 17.5 1.54277 17.5C1.16077 17.5 0.778771 17.355 0.486771 17.065C-0.102229 16.482 -0.105229 15.533 0.477771 14.944L6.38187 8.984L0.440871 3.062C-0.145129 2.478 -0.147128 1.5279 0.437871 0.941001C1.02187 0.354001 1.97387 0.353001 2.55887 0.938001L9.55877 7.916Z" fill="black" fillOpacity="0.56" />
 					</svg>
 				</button>
 			</div>

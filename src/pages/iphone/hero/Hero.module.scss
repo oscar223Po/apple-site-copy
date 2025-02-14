@@ -1,5 +1,5 @@
 @import "../../../variables.scss";
-.hero {
+.main {
 	margin-top: -44px;
 	padding-top: clamp(35px, 10vw, 70px);
 	@media (max-width: $mobile) {

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./App.scss"
 import { Route, Routes, useLocation } from 'react-router-dom'
 import Header from './components/header/Header'
@@ -21,6 +21,10 @@ import Preorder from './components/preorder/Preorder'
 const App = () => {
 	const location = useLocation();
 	const showNav = location.pathname === '/iphone';
+	// Сброс скролла при изменении маршрута
+	useEffect(() => {
+		window.scrollTo(0, 0); // Скроллится на верх страницы
+	}, [location]);
 	return (
 		<div className="wrapper">
 			<Header />

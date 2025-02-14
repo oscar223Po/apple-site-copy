@@ -4,7 +4,14 @@ import stHeader from './Header.module.scss';
 
 const Header = ({ path }) => {
 	const location = useLocation();
-	const headerClass = ['/', '/ipad'].includes(location.pathname) ? stHeader.header : stHeader.headerWhite;
+	const mainPaths = ['/', '/ipad'];
+	const relativePaths = [
+		'/', '/ipad', '/store', '/mac', '/watch', '/vision', '/airpods', '/tv', '/entertainment', '/accessories', '/support'
+	];
+
+	const headerClass = mainPaths.includes(location.pathname) ? stHeader.header : stHeader.headerWhite;
+	const headerRelative = relativePaths.includes(location.pathname) ? stHeader.header : stHeader.headerRelative;
+
 	// Work with menu list
 	const [isActive, setIsActive] = useState(false);
 	const handleClick = () => {
@@ -27,7 +34,7 @@ const Header = ({ path }) => {
 		setIsActive(false); // При изменении пути сбрасываем состояние
 	}, [location]);
 	return (
-		<header className={`${stHeader.header} ${headerClass}`}>
+		<header className={`${stHeader.header} ${headerClass} ${headerRelative}`}>
 			<div className={stHeader.container}>
 				<Link className={stHeader.logo} to="/">
 					<svg width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">

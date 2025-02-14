@@ -4,7 +4,7 @@ import images from '../../../assets/img/iphoneImages';
 
 const Hero = () => {
 	return (
-		<div className={style.hero}>
+		<div className={style.main}>
 			<div className="container">
 				<div className={style.body}>
 					<div className="heading">

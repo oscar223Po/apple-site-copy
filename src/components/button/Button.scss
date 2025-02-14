@@ -1,3 +1,4 @@
+@import "../../variables";
 // Button Border White
 .button-border-white {
 	color: #f5f5f7;
@@ -44,5 +45,29 @@
 			color: #f5f5f7;
 			background-color: #1d1d1f;
 		}
+	}
+}
+// Button Blue
+.button-blue {
+	color: #fff;
+	font-size: 17px;
+	min-height: 44px;
+	line-height: 118%;
+	padding: 0px 22px;
+	align-items: center;
+	border-radius: 50px;
+	display: inline-flex;
+	letter-spacing: -0.02em;
+	background-color: #0071e3;
+	transition: background-color 0.3s;
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: #0f83f9;
+		}
+	}
+	@media (max-width: $mobileSmall) {
+		font-size: 15px;
+		min-height: 38px;
+		padding: 0px 18px;
 	}
 }
